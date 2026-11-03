@@ -1,0 +1,7 @@
+{
+  "name": "Expo Auth Starter",
+  "slug": "expo-auth-starter",
+  "scheme": "expoauthstarter",
+  "iosBundleIdentifier": "com.asadchaudhary79.expoauth",
+  "androidPackage": "com.asadchaudhary79.expoauth"
+}

@@ -1,0 +1,87 @@
+{
+  "name": "expo-auth-starter",
+  "main": "index.js",
+  "version": "1.0.0",
+  "description": "A production-shaped Expo Router authentication starter with Better Auth, protected navigation, and portable persistence.",
+  "dependencies": {
+    "@better-auth/expo": "1.6.23",
+    "@expo-google-fonts/fraunces": "^0.4.1",
+    "@expo-google-fonts/outfit": "^0.4.3",
+    "@hookform/resolvers": "^5.4.0",
+    "@react-native-async-storage/async-storage": "2.2.0",
+    "@tanstack/react-query": "^5.101.2",
+    "better-auth": "1.6.23",
+    "expo": "~56.0.19",
+    "expo-apple-authentication": "~56.0.4",
+    "expo-application": "~56.0.3",
+    "expo-clipboard": "~56.0.4",
+    "expo-constants": "~56.0.23",
+    "expo-crypto": "~56.0.4",
+    "expo-dev-client": "~56.0.24",
+    "expo-font": "~56.0.7",
+    "expo-image-picker": "~56.0.25",
+    "expo-linking": "~56.0.16",
+    "expo-local-authentication": "~56.0.4",
+    "expo-network": "~56.0.5",
+    "expo-notifications": "~56.0.26",
+    "expo-router": "~56.2.18",
+    "expo-secure-store": "~56.0.4",
+    "expo-splash-screen": "~56.0.11",
+    "expo-status-bar": "~56.0.4",
+    "expo-symbols": "~56.0.7",
+    "expo-system-ui": "~56.0.5",
+    "expo-task-manager": "~56.0.27",
+    "expo-web-browser": "~56.0.6",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "react-hook-form": "^7.81.0",
+    "react-native": "0.85.3",
+    "react-native-gesture-handler": "~2.31.1",
+    "react-native-nitro-google-signin": "^1.0.2",
+    "react-native-nitro-modules": "^0.36.1",
+    "react-native-reanimated": "4.3.1",
+    "react-native-safe-area-context": "~5.7.0",
+    "react-native-screens": "~4.26.0",
+    "react-native-svg": "15.15.4",
+    "react-native-web": "~0.21.0",
+    "react-native-worklets": "0.8.3",
+    "sonner-native": "^0.26.4",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/react": "~19.2.2",
+    "dotenv": "^17.4.2",
+    "eslint": "^9.39.4",
+    "eslint-config-expo": "~56.0.4",
+    "typescript": "~6.0.3",
+    "vitest": "^4.1.10"
+  },
+  "scripts": {
+    "start": "expo start --dev-client",
+    "api": "npm run start --prefix backend",
+    "api:dev": "npm run dev --prefix backend",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "web": "expo start --web",
+    "auth:schema": "npm run auth:schema --prefix backend",
+    "db:generate": "npm run db:generate --prefix backend",
+    "db:migrate": "npm run db:migrate --prefix backend",
+    "db:studio": "npm run db:studio --prefix backend",
+    "lint": "expo lint",
+    "test": "node scripts/run-vitest.mjs && npm test --prefix backend",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit && npm run typecheck --prefix backend",
+    "check": "npm run typecheck && npm run lint && npm run test",
+    "audit:client": "expo export --platform web && node scripts/audit-client-bundle.mjs"
+  },
+  "expo": {
+    "doctor": {
+      "reactNativeDirectoryCheck": {
+        "exclude": [
+          "react-native-nitro-google-signin"
+        ]
+      }
+    }
+  },
+  "private": true
+}
