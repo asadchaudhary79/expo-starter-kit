@@ -2,7 +2,7 @@
 
 Production-shaped Expo Router authentication starter with an Express + Better Auth API, PostgreSQL/Drizzle, Resend email, and a light mobile UI that mirrors a typical consumer app.
 
-**Repository:** [github.com/asadchaudhary79/expo-auth-starter](https://github.com/asadchaudhary79/expo-auth-starter)
+**Repository:** [github.com/asadchaudhary79/expo-starter-kit](https://github.com/asadchaudhary79/expo-starter-kit)
 
 **Jump to:** [Quick start](#quick-start) · [App flow](#app-flow) · [Screens & tabs](#screens--tabs) · [API](#api) · [Environment](#environment) · [Native providers](#native-providers) · [Customize](#customization-map) · [Commands](#commands) · [Docs](#documentation)
 
@@ -57,8 +57,8 @@ Google, Apple, biometrics, and image picker need a **dev client / native build**
 ### 1. Clone and install
 
 ```sh
-git clone https://github.com/asadchaudhary79/expo-auth-starter.git
-cd expo-auth-starter
+git clone https://github.com/asadchaudhary79/expo-starter-kit.git
+cd expo-starter-kit
 npm install
 npm install --prefix backend
 ```
